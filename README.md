@@ -86,3 +86,27 @@ Use the joystick to control the position of the segment and ”draw” on the di
 
 - State 1 (default, but also initiated after a button press in State 2): Current position blinking. Can use the joystick to move from one position to neighbors. Short pressing the button toggles state 2. Long pressing the button in state 1 resets the entire display by turning all the segments OFF and moving the current position to the decimal point
 - State 2 (initiated after a button press in State 1): The current segment stops blinking, adopting the state of the segment before selection (ON or OFF). Toggling the Y axis should change the segment state from ON to OFF or from OFF to ON. Clicking the joystick should save the segment state and exit back to state 1
+
+
+# Homework 4
+
+**Photo of setup:**
+
+![asd](/Homework/H4/H4-pic.jpg)
+
+**[Demo Video](https://youtu.be/QKMn-xxjLUM)**<br>
+
+**Components:**<br>
+- 1 4 digit 7-segment display
+- 1 74hc595 shiftregister
+- 1 joystick
+- resistors and wires (per logic)
+
+**Technical Task:**<br>
+Use the joystick to move through the 4 digit 7 segment displays digits, press the button to lock in on the current digit and use the other axis to increment or decrement the number. Keep the button pressed to reset all the digit values and the current position to the first digit in the first state. The system has the following states:
+
+- State 1: the joystick axis can be used to cycle through the 4 digits; using the other axis does nothing. A blinking decimal point shows the current digit position. When pressing the button, the selected digit is locked in and the system goes to the second state.
+
+- State 2: in this state, the decimal point stays always on, no longer blinking and the axis can no longer be used to cycle through the 4 digits. Instead, using the other axis, the number on the current digit can be incremented or decremented IN HEX (aka from 0 to F). Pressing the button again returns to the previous state.
+
+- Reset: toggled by long pressing the buttononly in the first state. When resetting, all the digits go back to 0 and the current positionis set to the first (rightmost) digit, in the first state.
