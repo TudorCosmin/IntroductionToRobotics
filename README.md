@@ -110,3 +110,23 @@ Use the joystick to move through the 4 digit 7 segment displays digits, press th
 - State 2: in this state, the decimal point stays always on, no longer blinking and the axis can no longer be used to cycle through the 4 digits. Instead, using the other axis, the number on the current digit can be incremented or decremented IN HEX (aka from 0 to F). Pressing the button again returns to the previous state.
 
 - Reset: toggled by long pressing the buttononly in the first state. When resetting, all the digits go back to 0 and the current positionis set to the first (rightmost) digit, in the first state.
+
+# Homework 5
+
+**Photo of setup:**
+
+![asd](/Homework/H5/H5-pic.jpg)
+
+**[Demo Video of the menu](https://youtu.be/NSpRQAL45rI)**<br>
+
+**[Demo Video of the first level](https://youtu.be/zvDQvhPP4PI)**<br>
+
+**Components:**<br>
+- 1 LCD display
+- 1 8x8 LED matrix
+- 1 74hc595 shiftregister
+- 1 joystick
+- 1 potentiometer
+- resistors and wires (per logic)
+
+**[Technical Task](https://github.com/TudorCosmin/IntroductionToRobotics/blob/main/Homework/H5/Matrix%20project%20requirements.pdf)**<br>
