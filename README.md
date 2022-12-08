@@ -122,7 +122,7 @@ Use the joystick to move through the 4 digit 7 segment displays digits, press th
 **Components:**<br>
 - 1 LCD display
 - 1 8x8 LED matrix
-- 1 74hc595 shiftregister
+- 1 MAX7219 driver
 - 1 joystick
 - 1 potentiometer
 - resistors and wires (per logic)
